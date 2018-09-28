@@ -13,18 +13,18 @@ O objetivo desse projeto será construir um “Carinho de Controle” que será 
 
 ## Lista de Componentes 
 
-1 Kit Chassi Acrílico de Carro com 2 motores DC 
-2 Módulos de Rádio Frequência NRF24L01 
-1 Módulo Ponte H para Arduino - para 2 motores DC 12V
-1 Módulo Joystick para Arduino
-2 Arduinos UNO
-1 Protoboard Pequena
-2 Suportes para 4 Pilhas AA
-2 Conectores para Bateria 9V para Arduino
-1 Interruptor
-Fios e Conectores Dupont (Macho e Fêmea)
-8 Pilhas AA
-2 Baterias 9V
+* 1 Kit Chassi Acrílico de Carro com 2 motores DC 
+* 2 Módulos de Rádio Frequência NRF24L01 
+* 1 Módulo Ponte H para Arduino - para 2 motores DC 12V
+* 1 Módulo Joystick para Arduino
+* 2 Arduinos UNO
+* 1 Protoboard Pequena
+* 2 Suportes para 4 Pilhas AA
+* 2 Conectores para Bateria 9V para Arduino
+* 1 Interruptor
+* Fios e Conectores Dupont (Macho e Fêmea)
+* 8 Pilhas AA
+* 2 Baterias 9V
 
 _______________________________________
 Obs:
