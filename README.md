@@ -26,7 +26,6 @@ O objetivo desse projeto será construir um “Carinho de Controle” que será 
 _______________________________________
 
 ## Código
-
 //SERVO MOTOR SENTIDO HORARIO: IN1= 5V, IN2= GND
 //SERVO MOTOR ANTI-HORARIO :   IN1= GDN, IN2= 5V
 
@@ -96,71 +95,3 @@ void loop()  {
     analogWrite(in3, vel);
     analogWrite(in4, 0);
   }
-
-  if (caracter == 'r') {      // botao Ré
-    analogWrite(in1, vel);
-    analogWrite(in2, 0);
-    analogWrite(in3, 0);
-    analogWrite(in4, vel);
-  }
-
-
-
-  if (caracter == 'l') {      // Liga farois
-    digitalWrite(leds, 1);
-
-  }
-  if (caracter == 'g') {      // Liga farois
-    digitalWrite(leds, 0);
-
-  }
-  if (caracter == 'a') {        // controle de obstaculo
-
-    digitalWrite(ptrig, HIGH);   // gera um pulso de trigger por 10us
-    delayMicroseconds(10);
-    digitalWrite(ptrig, LOW);
-
-    tempo = pulseIn(pecho, HIGH);          // Lê o tempo do Echo
-    distancia = (tempo / 2) / 29;          // calcula a distancia em centimetros
-    delay(10);
-
-    if (distancia <= 20) {                  // se a distancia for menor ou igual a  5cm
-      digitalWrite(13, HIGH);             // acende um led
-
-      analogWrite(in1, 0);             // para os motores por 200 mili segundos
-      analogWrite(in2, 0);
-      analogWrite(in3, 0);
-      analogWrite(in4, 0);
-      delay (200);
-
-      analogWrite(in1, vel);         //da ré por 500 mili segundos
-      analogWrite(in2, 0);
-      analogWrite(in3, 0);
-      analogWrite(in4, vel);
-      delay(500);
-
-      analogWrite(in1, 0);            // gira para a esquerda por 600 mili segundos
-      analogWrite(in2, 0);
-      analogWrite(in3, vel);
-      analogWrite(in4, 0);
-      delay(600);
-
-
-
-      digitalWrite(13, LOW);
-    }
-    else {                            //se não houver obstaculos continua em frente
-      analogWrite(in1, 0);
-      analogWrite(in2, vel);
-      analogWrite(in3, vel);
-      analogWrite(in4, 0);
-    }
-  }
-  if  (caracter == 'b') {       // desliga os motores
-    analogWrite(in1, 0);
-    analogWrite(in2, 0);
-    analogWrite(in3, 0);
-    analogWrite(in4, 0);
-  }
-}
-
