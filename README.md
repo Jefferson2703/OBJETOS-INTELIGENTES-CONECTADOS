@@ -9,7 +9,7 @@
 
 ## Descrição resumida do projeto
 
-O objetivo desse projeto será construir um “Carinho de Controle” que será controlado atrav~es do celular sinais para um receptor assim o lendo enviando para o protótipo arduino e que controla dois motores de corrente continua sendo que irá tanto para o lado direto, lado esquerdo e para frente. A lógica dele é bem simples e será criada para o entendimento de como usar o arduino, a linguagem C que é a mais simples para o entendimento será usada, neste projeto colocaremos em prática todo os conhecimentos adquiridos em mecânica, eletrônica e programação que tivermos ao longo do curso 
+O objetivo desse projeto será construir um “Carinho de Controle” que será controlado através do celular via bluetooth que envia sinal para um receptor assim o lendo enviando para o protótipo arduino e que controla dois motores de corrente continua sendo que irá tanto para o lado direto, lado esquerdo e para frente. A lógica dele é bem simples e será criada para o entendimento de como usar o arduino, a linguagem C que é a mais simples para o entendimento será usada, neste projeto colocaremos em prática todo os conhecimentos adquiridos em mecânica, eletrônica e programação que tivermos ao longo do curso 
 
 ## Lista de Componentes 
 
