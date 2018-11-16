@@ -30,6 +30,8 @@ _______________________________________
 //SERVO MOTOR ANTI-HORARIO :   IN1= GDN, IN2= 5V
 
 //Variaveis do tipo inteiras
+#include <SoftwareSerial.h>
+
 #include <Servo.h>
 int pos = 0;
 Servo servo_8;
@@ -43,13 +45,13 @@ Servo servo_8;
 int vel = 255;             // Velocidade dos motores (0-255)
 int caracter = 'p';        // inicia desligado
 
-#define pecho 2           
-#define ptrig 3           
-int tempo, distancia;      
-
+#define pecho 2           // define o pino 2 para o retorno do ultrasson
+#define ptrig 3            // define o pino 3 para o trig do ultrasson
+int tempo, distancia;      // para Calcular distacia
 
 void setup()  {
   Serial.begin(9600);    // inicia a Serial com bluetooth a 9600bps
+
   pinMode(in1, OUTPUT); // saida digital
   pinMode(in2, OUTPUT);
   pinMode(in3, OUTPUT);
@@ -58,8 +60,8 @@ void setup()  {
 
   pinMode(servo, OUTPUT);
 
-  pinMode(pecho, INPUT);  
-  pinMode(ptrig, OUTPUT);  
+  pinMode(pecho, INPUT);   // define el pin 2 como entrada (pecho)
+  pinMode(ptrig, OUTPUT);  // define el pin 3 como salida  (ptrig)
   pinMode(13, OUTPUT);
   servo_8.attach(8);
 
@@ -67,6 +69,7 @@ void setup()  {
 
 void loop()  {
 
+  
   if (Serial.available() > 0) {    // lê o dado envido pelo blutooth e armazena na vriavel caracter
     caracter = Serial.read();
   }
@@ -161,4 +164,6 @@ void loop()  {
     analogWrite(in3, 0);
     analogWrite(in4, 0);
   }
+
+
 }
