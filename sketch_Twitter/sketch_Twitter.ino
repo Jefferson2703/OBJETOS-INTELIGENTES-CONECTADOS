@@ -65,17 +65,6 @@ void tweetUptime()
   Blynk.tweet(String("Running for ") + uptime + " minutes.");
 }
 
-void tweetOnButtonPress()
-{
-  // Invert state, since button is "Active LOW"
-  int isButtonPressed = !digitalRead(13);
-  if (isButtonPressed) {
-    Serial.println("Botão é pressionado.");
-
-    Blynk.tweet("Yaaay... Botão pressionado! :)\n #arduino #IoT #blynk @blynk_app");
-  }
-}
-
 void setup()
 {
   // Debug console
@@ -92,10 +81,6 @@ void setup()
   // Setup a function to be called every 10 minutes
   timer.setInterval(10L * 60000L, tweetUptime);
 
-  // Setup twitter button on pin 2
-  pinMode(13, INPUT_PULLUP);
-  // Attach pin 13 interrupt to our handler
-  attachInterrupt(digitalPinToInterrupt(13), tweetOnButtonPress, CHANGE);
 }
 
 void loop()
