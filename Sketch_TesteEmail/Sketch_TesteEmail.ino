@@ -57,7 +57,6 @@ SoftwareSerial SerialBLE(0, 1); // RX, TX
 void setup()
 {
   // Debug console
-  Serial.begin(9600);
 
   SerialBLE.begin(9600);
   Blynk.begin(SerialBLE, auth);
