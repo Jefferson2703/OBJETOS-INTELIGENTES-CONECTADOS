@@ -70,7 +70,6 @@ void setup()
   // Debug console
   Serial.begin(9600);
 
-  SerialBLE.begin(9600);
   Blynk.begin(SerialBLE, auth);
 
   Serial.println("Esperando por conexões...");
