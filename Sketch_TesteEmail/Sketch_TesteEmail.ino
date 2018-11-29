@@ -54,25 +54,6 @@ char auth[] = "1f146b5f7f9e4d5599bc22c4cdf5df40";
 
 SoftwareSerial SerialBLE(0, 1); // RX, TX
 
-void emailOnButtonPress()
-{
-  // *** WARNING: You are limited to send ONLY ONE E-MAIL PER 15 SECONDS! ***
-
-  // Let's send an e-mail when you press the button
-  // connected to digital pin 2 on your Arduino
-
-  int isButtonPressed = !digitalRead(13); // Invert state, since button is "Active LOW"
-
-  if (isButtonPressed) // You can write any condition to trigger e-mail sending
-  {
-    Serial.println("Botão é pressionado."); // This can be seen in the Serial Monitor
-    Blynk.email("jefferson........@hotmail.com", "Botão precionado", "Botão de Led do Arduino foi precionado");
-
-    // Or, if you want to use the email specified in the App (like for App Export):
-    //Blynk.email("Subject: Button Logger", "You just pushed the button...");
-  }
-}
-
 void setup()
 {
   // Debug console
@@ -87,10 +68,6 @@ void setup()
   // Just put the recepient's "e-mail address", "Subject" and the "message body"
   Blynk.email("jefferson........@hotmail.com", "OB_INTELIGENTES", "Meu Projeto de Objetos inteligentes Conectados está online.");
 
-  // Setting the button
-  pinMode(13, INPUT_PULLUP);
-  // Attach pin 13 interrupt to our handler
-  attachInterrupt(digitalPinToInterrupt(13), emailOnButtonPress, CHANGE);
 }
 
 void loop()
