@@ -32,7 +32,7 @@ O objetivo desse projeto será construir um “Carinho de Controle” que será 
 
 ## Botão e-mail 
 
-* Configure o Botão  
+* Ensira botão  
 * Ensira o seu e-mail 
 * Em content Type  deixe padrão: Text/html
 
