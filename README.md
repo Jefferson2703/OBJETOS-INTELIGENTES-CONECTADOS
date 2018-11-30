@@ -25,6 +25,8 @@ O objetivo desse projeto será construir um “Carinho de Controle” que será 
 
 ## Programação Controle Blynk
 
+## Programação Direção
+
 * Botão FT Direita:  Configure D5 como PUSH
 * Botão FT Esquerda: Configure D6 como PUSH
 * Botão RÊ Direita:  Configure D4 como PUSH
@@ -32,10 +34,13 @@ O objetivo desse projeto será construir um “Carinho de Controle” que será 
 
 ## Botão e-mail 
 
-* Ensira botão  
+* Ensira botão  de e-mail
 * Ensira o seu e-mail 
 * Em content Type  deixe padrão: Text/html
 
+## Botão bluetooth
 
-_______________________________________
+* Ensira botão  
+* Ensira o seu e-mail 
+* Em content Type  deixe padrão: Text/html
 
