@@ -23,5 +23,19 @@ O objetivo desse projeto será construir um “Carinho de Controle” que será 
 * 4 Pilhas AA
 * 1 Baterias 9V
 
+## Programação Controle Blynk
+
+* Botão FT Direita:  Configure D5 como PUSH
+* Botão FT Esquerda: Configure D6 como PUSH
+* Botão RÊ Direita:  Configure D4 como PUSH
+* Botão RÊ Direita:  Configure D5 como PUSH
+
+## Botão e-mail 
+
+* Configure o Botão  
+* Ensira o seu e-mail 
+* Em content Type  deixe padrão: Text/html
+
+
 _______________________________________
 
